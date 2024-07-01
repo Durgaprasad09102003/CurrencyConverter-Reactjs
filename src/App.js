@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Main from './Main';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/CurrencyConverter-Reactjs" element={ <Navigate to='/Main' />} />
-          <Route path="/Main" element={ <Main/>} />
+          <Route path="/" element={<Navigate to="/Main" />} />
+          <Route path="/Main" element={<Main />} />
         </Routes>
       </BrowserRouter>
     </div>
