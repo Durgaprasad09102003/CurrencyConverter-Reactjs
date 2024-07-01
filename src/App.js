@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/CurrencyConverter-Reactjs" element={<Navigate to="/Main" />} />
           <Route path="/CurrencyConverter-Reactjs/" element={<Main />} />
         </Routes>
       </BrowserRouter>
